@@ -10,7 +10,12 @@
   "help": "",
   "url": "",
   "logo": "",
-  "dependencies": [],
+  "dependencies": [{
+    "id": "fcfdd0c0-7d0b-4781-b0a7-8be9c3c19967",
+    "name": "BC Big Time Ext Fin",
+    "publisher": "Rafael Abances",
+    "version": "1.0.0.0"
+  }],
   "screenshots": [],
   "platform": "1.0.0.0",
   "application": "20.0.0.0",
