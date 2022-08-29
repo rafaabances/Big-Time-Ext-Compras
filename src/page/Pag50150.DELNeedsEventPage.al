@@ -25,6 +25,11 @@ page 50150 "DEL Needs/Event Page"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the No field.', Comment = 'ESP="Nº"';
                 }
+                field("Item Unit of Measure"; Rec."Item Unit of Measure")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Item Unit of Measure field.', Comment = 'ESP="Unidad de medida producto"';
+                }
                 field(Quantity; Rec.Quantity)
                 {
                     ApplicationArea = All;
@@ -44,16 +49,6 @@ page 50150 "DEL Needs/Event Page"
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Name Reladed Vendor field.', Comment = 'ESP="Nombre del proveedor asociado"';
-                }
-                field("No Related Product"; Rec."No Related Product")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the No Related Product field.', Comment = 'ESP="Nº de producto asociado"';
-                }
-                field("Item Unit of Measure"; Rec."Item Unit of Measure")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Item Unit of Measure field.', Comment = 'ESP="Unidad de medida producto"';
                 }
             }
         }

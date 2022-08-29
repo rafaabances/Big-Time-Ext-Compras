@@ -6,20 +6,20 @@ table 50151 "DEL Generic Needs"
 
     fields
     {
-        field(2; "Line No"; Integer)
+        field(1; "Line No"; Integer)
         {
             DataClassification = ToBeClassified;
             Caption = 'Line No', comment = 'ESP="Nº Línea"';
         }
-        field(3; "DEL Type Need/Event"; Enum "DEL Type Need/Event")
+        field(2; "DEL Type Need/Event"; Enum "DEL Type Need/Event")
         {
             DataClassification = ToBeClassified;
             Caption = 'Type Need/Event', comment = 'ESP="Tipo"';
         }
-        field(4; "No Item/Fixed Asset"; Code[20])
+        field(3; "No Item/Fixed Asset"; Code[20])
         {
             DataClassification = ToBeClassified;
-            Caption = 'No', comment = 'ESP="Nº"';
+            Caption = 'No Related Product', comment = 'ESP="Nº de producto/AF asociado"';
             TableRelation = if ("DEL Type Need/Event" = const(Product)) Item where("Type" = const(Inventory))
             else
             if ("DEL Type Need/Event" = const(Service)) Item where("Type" = const(Service))
@@ -32,7 +32,12 @@ table 50151 "DEL Generic Needs"
             else
             if ("DEL Type Need/Event" = const(Insurance)) Item where("Type" = const(Insurance));
         }
-
+        field(4; "Item Unit of Measure"; Code[10])
+        {
+            DataClassification = ToBeClassified;
+            Caption = 'Item Unit of Measure', comment = 'ESP="Unidad de medida producto"';
+            TableRelation = "Item Unit of Measure";
+        }
         field(5; "Quantity"; Integer)
         {
             DataClassification = ToBeClassified;
@@ -62,24 +67,12 @@ table 50151 "DEL Generic Needs"
             Caption = 'Name Reladed Vendor', comment = 'ESP="Nombre del proveedor asociado"';
             TableRelation = Vendor;
         }
-        field(9; "No Related Product"; Code[20])
-        {
-            DataClassification = ToBeClassified;
-            Caption = 'No Related Product', comment = 'ESP="Nº de producto asociado"';
-            TableRelation = Item;
-        }
-        field(10; "Item Unit of Measure"; Code[10])
-        {
-            DataClassification = ToBeClassified;
-            Caption = 'Item Unit of Measure', comment = 'ESP="Unidad de medida producto"';
-            TableRelation = "Item Unit of Measure";
-        }
-        field(11; "Type of Calculation"; Enum "DEL Type of Calculation")
+        field(9; "Type of Calculation"; Enum "DEL Type of Calculation")
         {
             DataClassification = ToBeClassified;
             Caption = 'Type of Calculation', comment = 'ESP="Tipo de cálculo"';
         }
-        field(12; "SurCharge Insurance"; Decimal)
+        field(10; "SurCharge Insurance"; Decimal)
         {
             DataClassification = ToBeClassified;
             Caption = 'SurCharge Insurance', comment = 'ESP="Recargo Seguro"';

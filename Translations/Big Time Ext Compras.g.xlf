@@ -29,14 +29,9 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table DEL Generic Needs - Field Name Reladed Vendor - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1023263063 - Field 3824087463 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>No</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Nº"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table DEL Generic Needs - Field No Item/Fixed Asset - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1023263063 - Field 3188973991 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>No Related Product</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Nº de producto asociado"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table DEL Generic Needs - Field No Related Product - Property Caption</note>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº de producto/AF asociado"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEL Generic Needs - Field No Item/Fixed Asset - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1023263063 - Field 2902865126 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>No Related Vendor</source>
@@ -94,14 +89,9 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table DEL Needs/Event - Field No Event - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2107247801 - Field 3824087463 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>No</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Nº"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table DEL Needs/Event - Field No Item/Fixed Asset - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2107247801 - Field 3188973991 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>No Related Product</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Nº de producto asociado"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table DEL Needs/Event - Field No Related Product - Property Caption</note>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº de producto/AF asociado"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEL Needs/Event - Field No Item/Fixed Asset - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2107247801 - Field 2902865126 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>No Related Vendor</source>
@@ -142,11 +132,6 @@
           <source>Specifies the value of the No field.</source>
           <note from="Developer" annotates="general" priority="2">ESP="Nº"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DEL Generic Needs Page - Control No Item/Fixed Asset - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2553181082 - Control 3188973991 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the No Related Product field.</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Nº de producto asociado"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page DEL Generic Needs Page - Control No Related Product - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 2553181082 - Control 2902865126 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the No Related Vendor field.</source>
@@ -203,11 +188,6 @@
           <note from="Developer" annotates="general" priority="2">ESP="Nº"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DEL Needs/Event Page - Control No Item/Fixed Asset - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 2061381800 - Control 3188973991 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the No Related Product field.</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Nº de producto asociado"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page DEL Needs/Event Page - Control No Related Product - Property ToolTip</note>
-        </trans-unit>
         <trans-unit id="Page 2061381800 - Control 2902865126 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the No Related Vendor field.</source>
           <note from="Developer" annotates="general" priority="2">ESP="Nº de proveedor asociado"</note>
@@ -223,6 +203,11 @@
           <note from="Developer" annotates="general" priority="2">ESP="Cantidad"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DEL Needs/Event Page - Control Quantity - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3704604204 - Control 3647872518 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1789321147">
+          <source>Specifies the value of the Nº de Eventos en Preparación</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Del Ext Events CardPart - Control Number In preparation Events - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 2063196785 - Control 3421519920 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3225365858">
           <source>Needs of Event</source>
           <note from="Developer" annotates="general" priority="2">ESP="Necesidades de Evento"</note>
@@ -232,6 +217,11 @@
           <source>Generic Needs</source>
           <note from="Developer" annotates="general" priority="2">ESP="Necesidades Genéricas"</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension EXT Del Events SetUp Conf - Control Generic Needs - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3743542477 - Field 3647872518 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3535325838">
+          <source>Nº de Eventos en Preparación</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Del Ext Event Cue - Field Number In preparation Events - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 2995380296 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Type Need/Event</source>
@@ -282,11 +272,6 @@
           <source>Manual</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum DEL Type of Calculation - EnumValue Manually - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="EnumExtension 2106194422 - EnumValue 3298367546 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Enum 2496466826">
-          <source>En preparación</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">EnumExtension Increase Del Status Event Enum - EnumValue In preparation - Property Caption</note>
         </trans-unit>
         <trans-unit id="EnumExtension 4093180191 - EnumValue 1538464910 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Enum 4093180191">
           <source>Seguro</source>

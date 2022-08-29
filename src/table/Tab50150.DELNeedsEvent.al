@@ -24,7 +24,7 @@ table 50150 "DEL Needs/Event"
         field(4; "No Item/Fixed Asset"; Code[20])
         {
             DataClassification = ToBeClassified;
-            Caption = 'No', comment = 'ESP="Nº"';
+            Caption = 'No Related Product', comment = 'ESP="Nº de producto/AF asociado"';
             TableRelation = if ("DEL Type Need/Event" = const(Product)) Item where("Type" = const(Inventory))
             else
             if ("DEL Type Need/Event" = const(Service)) Item where("Type" = const(Service))
@@ -37,17 +37,24 @@ table 50150 "DEL Needs/Event"
             else
             if ("DEL Type Need/Event" = const(Insurance)) Item where("Type" = const(Insurance));
         }
-        field(5; "Quantity"; Integer)
+
+        field(5; "Item Unit of Measure"; Code[10])
+        {
+            DataClassification = ToBeClassified;
+            Caption = 'Item Unit of Measure', comment = 'ESP="Unidad de medida producto"';
+            TableRelation = "Item Unit of Measure";
+        }
+        field(6; "Quantity"; Integer)
         {
             DataClassification = ToBeClassified;
             Caption = 'Quantity', comment = 'ESP="Cantidad"';
         }
-        field(6; "Price"; Decimal)
+        field(7; "Price"; Decimal)
         {
             DataClassification = ToBeClassified;
             Caption = 'Price', comment = 'ESP="Precio"';
         }
-        field(7; "No Related Vendor"; Code[20])
+        field(8; "No Related Vendor"; Code[20])
         {
             DataClassification = ToBeClassified;
             Caption = 'No Related Vendor', comment = 'ESP="Nº de proveedor asociado"';
@@ -61,24 +68,13 @@ table 50150 "DEL Needs/Event"
                     rec."Name Reladed Vendor" := rlVendor.Name;
             end;
         }
-        field(8; "Name Reladed Vendor"; Text[100])
+        field(9; "Name Reladed Vendor"; Text[100])
         {
             DataClassification = ToBeClassified;
             Caption = 'Name Reladed Vendor', comment = 'ESP="Nombre del proveedor asociado"';
             TableRelation = Vendor;
         }
-        field(9; "No Related Product"; Code[20])
-        {
-            DataClassification = ToBeClassified;
-            Caption = 'No Related Product', comment = 'ESP="Nº de producto asociado"';
-            TableRelation = Item;
-        }
-        field(10; "Item Unit of Measure"; Code[10])
-        {
-            DataClassification = ToBeClassified;
-            Caption = 'Item Unit of Measure', comment = 'ESP="Unidad de medida producto"';
-            TableRelation = "Item Unit of Measure";
-        }
+
 
     }
 
